@@ -48,7 +48,7 @@ function addressList(data) {
     console.log(`----------`)
     
   })
-  
+  return maleInfo;
 }
 
 
