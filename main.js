@@ -36,15 +36,18 @@ function addressList(data) {
       email,
       dob:{date}
     } = men;
-    const birthday = date.slice(0,10)
-    // console.log(birthday)
+    // const birthday = date.slice(0,10)
+    const month = date.slice(5,7);
+    const day = date.slice(8,10);
+    const year = date.slice(0,4)
+    // console.log(year)
 
     console.log(`${title} ${first} ${last}`);
     console.log(`${number} ${name}`);
     console.log(`${city} ${state}`);
     console.log(`${country}, ${postcode}`);
     console.log(`Email: ${email}`);
-    console.log(`Birthday: ${birthday}`)
+    console.log(`Birthday: ${month}-${day}-${year}`)
     console.log(`----------`)
     
   })
